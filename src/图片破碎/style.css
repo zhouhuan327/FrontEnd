@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'iconfont';
+    /* project id 1625131 */
+    src: url('//at.alicdn.com/t/font_1625131_elc5t6r7nr5.eot');
+    src: url('//at.alicdn.com/t/font_1625131_elc5t6r7nr5.eot?#iefix') format('embedded-opentype'),
+        url('//at.alicdn.com/t/font_1625131_elc5t6r7nr5.woff2') format('woff2'),
+        url('//at.alicdn.com/t/font_1625131_elc5t6r7nr5.woff') format('woff'),
+        url('//at.alicdn.com/t/font_1625131_elc5t6r7nr5.ttf') format('truetype'),
+        url('//at.alicdn.com/t/font_1625131_elc5t6r7nr5.svg#iconfont') format('svg');
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.img1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 2;
+    text-align: center;
+    /* 在 <img> 元素上使用常规的排版相关样式。 这些样式会被应用到替换文本上（即 alt 属性值） */
+    /* 如果图片正常显示了，这些样式也不会影响图片的渲染 */
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+
+}
+
+.img1:after {
+    font-family: "iconfont" !important;
+    content: "\e624"" "attr(alt);
+
+    font-size: 16px;
+    font-family: FontAwesome;
+    color: rgb(100, 100, 100);
+
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.img2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 2;
+    text-align: center;
+    /* 在 <img> 元素上使用常规的排版相关样式。 这些样式会被应用到替换文本上（即 alt 属性值） */
+    /* 如果图片正常显示了，这些样式也不会影响图片的渲染 */
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    min-height: 50px;
+
+}
+
+.img2:before {
+    content: " ";
+    display: block;
+
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: calc(100% + 10px);
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    border: 2px dotted rgb(200, 200, 200);
+    border-radius: 5px;
+}
+
+.img2:after {
+    font-family: "iconfont" !important;
+    content: "\e6b4"" "attr(alt);
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-family: FontAwesome;
+    color: rgb(100, 100, 100);
+
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}

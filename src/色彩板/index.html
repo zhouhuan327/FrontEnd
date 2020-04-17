@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: #111;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 400px;
+      }
+      .block {
+        background: #000;
+        box-shadow: 0 0 2px #000;
+        margin: 2px;
+        height: 16px;
+        width: 16px;
+        transition: 2s ease;
+      }
+      .block:hover {
+        transition-duration: 0s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      const body = document.querySelector('body')
+      const container = document.createElement('div')
+      container.classList.add('container')
+      const colors = [
+        '#c23531',
+        '#3C93DD',
+        '#61a0a8',
+        '#d48265',
+        '#91c7ae',
+        '#6e7074',
+      ]
+      const blockTotal = 500
+      for (let i = 0; i < blockTotal; i++) {
+        const block = document.createElement('div')
+        block.classList.add('block')
+        container.appendChild(block)
+      }
+      body.appendChild(container)
+      container.addEventListener('mouseover', (e) => {
+        if (e.target.classList[0] == 'block') {
+          console.log(e.target)
+          const color = colors[Math.floor(Math.random() * colors.length)]
+          e.target.style.background = color
+          e.target.style.boxShadow = `0 0 2px ${color}`
+        }
+      })
+      container.addEventListener('mouseout', (e) => {
+        if (e.target.classList[0] == 'block') {
+          e.target.style.background = '#000'
+          e.target.style.boxShadow = `0 0 2px #000`
+        }
+      })
+    </script>
+  </body>
+</html>

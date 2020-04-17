@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <img src="images/LOGO APPLE.png" alt="">
+
+            <img src="images/head_icon.png" alt="">
+        </div>
+        <div class="title">
+            <p>Shopping Cart</p>
+            <p>Free delivery and free returns</p>
+        </div>
+        <div class="info">
+            <img class="phone-img" src="images/iphonex.png" alt="">
+            <div class="right">
+                <div>
+                    <span class="name">IPHONE X 256GB(GSM)</span>
+                    <div class="number-select">
+                        <span class="btn-add">+</span> <span class="total">2</span> <span class="btn-sub">-</span>
+                    </div>
+                    <span class="price">$1,149.00</span>
+                </div>
+                <div>
+                    <div class="color"></div>
+                    <span class="color-name">Space Gray</span>
+                    <span class="close">X</span>
+                </div>
+                <div>
+                    <div class="apple-care">
+                        <img src="images/ICON APPLE CARE.png" alt="">
+                        <span>Added Apple Care $199</span>
+                        <div class="close">x</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="payment">
+            <div class="left">
+                <h2>Payment Information</h2>
+                <span>Choose your mthod of payment</span>
+                <div class="credit">
+                    <img src="images/CREDIT-CARD.png" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <div class="icons">
+                    <svg class="icon paypal" aria-hidden="true">
+                        <use xlink:href="#icon-Paypal"></use>
+                    </svg>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-yinhangqia"></use>
+                    </svg>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-visa-"></use>
+                    </svg>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-Amex-"></use>
+                    </svg>
+                </div>
+                <div class="card-forms">
+                    <div class="input-group">
+                        <label for="card-number">Credit card number</label>
+                        <input name="card-number" value="3213124321414" type="text">
+                    </div>
+                    <div class="input-group">
+                        <label for="date">xxxxx date</label>
+                        <input name="date" value="03/24" type="text">
+                    </div>
+                    <div class="input-group">
+                        <label for="card-number">Security Code</label>
+                        <input name="card-number" value="420" type="text">
+                    </div>
+                    <div class="input-group">
+                        <label for="date">Postal Code</label>
+                        <input name="date" value="23333" type="text">
+                    </div>
+
+                    <div class="submit-btn">Add card</div>
+                </div>
+            </div>
+        </div>
+        <div class="sub">
+            <div class="row">
+                <span>Subtotal</span>
+                <span>$2,497.00</span>
+            </div>
+            <div class="row">
+                <span>Shipping</span>
+                <span>Free</span>
+            </div>
+            <div class="row">
+                <span>Estimate TAX for:<span style="color: gray;">10019</span></span>
+                <span>$324,233.00</span>
+            </div>
+            <div class="row">
+                <span>Promotional:<span style="color: gray;">Z4KDAF4</span></span>
+                <span>$-233</span>
+            </div>
+        </div>
+        <div class="row-purchase">
+            <div class="submit-btn purchase">Purchase</div>
+            <span>TOTAL:$2556.64</span>
+        </div>
+    </div>
+</body>
+<script src="//at.alicdn.com/t/font_1625131_f3rma8d7t2.js"></script>
+<script>
+    const total = document.querySelector('.total')
+    const add = document.querySelector('.btn-add')
+    const sub = document.querySelector('.btn-sub')
+    var val = total.innerHTML
+    add.onclick = function () {
+        val++
+        total.innerHTML = val;
+    }
+    sub.onclick = function () {
+        if (val == 0) return
+        val--
+        total.innerHTML = val;
+    }
+</script>
+
+</html>

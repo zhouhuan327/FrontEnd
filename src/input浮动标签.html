@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 1.25rem;
+      }
+
+      .input-field {
+        position: relative;
+      }
+
+      input {
+        background: #eee;
+        border: none;
+        padding: 12px 15px;
+        margin: 5px 0;
+        z-index: 3;
+      }
+
+      input:focus {
+        outline: 2px solid rgb(166, 204, 226);
+      }
+
+      .input-field label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* 默认标签文本是透明的 */
+        opacity: 0;
+        /* 有所偏移的 */
+        transform: translateY(5px);
+        /* 设置了过渡动画效果的（针对 opacity 和 transform 属性） */
+        transition: opacity linear 200ms, transform ease-in-out 150ms;
+        font-size: 14px;
+        color: #666;
+        font-weight: bold;
+        width: 100px;
+        z-index: -1;
+      }
+
+      /* 在输入框中输入内容后，占位文本不可见，词条声明生效 */
+      .input-field input:not(:placeholder-shown) + label {
+        /* 标签文本设置为可见 */
+        opacity: 1;
+        /* 与 transition 结合起来，标签文本在可见的过程中，出现浮动效果 */
+        transform: translateY(-18px);
+      }
+
+      .input-filed2 input {
+        position: relative;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="input-field">
+      <input placeholder="Enter your first name" id="fname" />
+      <label for="fname">First name</label>
+    </div>
+  </body>
+</html>
