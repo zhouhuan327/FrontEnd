@@ -22,9 +22,8 @@ const updatePlayIcon = () => {
 }
 // 更新进度条
 const updateProgress = () => {
-    const currentTime = video.currentTime
+    const { currentTime, duration } = video
     console.log(currentTime)
-    const duration = video.duration
     progress.value = (currentTime / duration) * 100
     // 获取分钟数
     let mins = Math.floor(currentTime / 60)
