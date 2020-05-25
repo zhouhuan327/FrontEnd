@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            .box {
+                position: fixed;
+
+                width: 100px;
+                height: 100px;
+                background: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="move">move</button>
+        <div class="box"></div>
+        <script>
+            const box = document.querySelector('.box');
+            box.style.left = 0;
+            box.style.top = 0;
+            document.getElementById('move').onclick = function () {
+                window.requestAnimationFrame(load);
+            };
+
+            var start = null;
+            function load(timestamp) {
+                if (!start) start = timestamp;
+                let progress = timestamp - start;
+                console.log(progress);
+                box.style.left = parseInt(box.style.left) + (progress > 2000 ? 1 : 3) + 'px';
+
+                if (progress < 5000) {
+                    window.requestAnimationFrame(load);
+                }
+            }
+            function load2() {
+                let left = getComputedStyle(box).left;
+                box.style.left = parseInt(left) + 1 + 'px';
+                console.log('move 1');
+                if (parseInt(left) < 1000) {
+                    var id = setTimeout(load2, 10);
+                } else {
+                    clearTimeout(id);
+                }
+            }
+        </script>
+    </body>
+</html>
