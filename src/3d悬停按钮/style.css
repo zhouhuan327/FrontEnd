@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    display: grid;
+    height: 100%;
+    place-content: center;
+    background: #000;
+}
+.icons {
+    display: inline-flex;
+}
+.icons a {
+    position: relative;
+    margin: 0 25px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+.icons a .layer {
+    width: 55px;
+    height: 55px;
+    transition: all 0.3s ease-in-out;
+}
+/* 关键部分 */
+.icons a:hover .layer {
+    transform: rotate(-35deg) skew(20deg);
+}
+
+.icons a .layer span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: -1px 1px 3px #4267b2;
+    transition: all 0.3s;
+}
+.icons a .layer span:nth-child(1) {
+    opacity: 0.2;
+}
+.icons a:hover .layer span:nth-child(2) {
+    opacity: 0.4;
+    transform: translate(5px, -5px);
+}
+.icons a:hover .layer span:nth-child(3) {
+    opacity: 0.6;
+    transform: translate(10px, -10px);
+}
+.icons a:hover .layer span:nth-child(4) {
+    opacity: 0.8;
+    transform: translate(15px, -15px);
+}
+.icons a:hover .layer span:nth-child(5) {
+    opacity: 1;
+    transform: translate(20px, -20px);
+}
+
+.icons a .layer span.fab {
+    font-size: 30px;
+    line-height: 55px;
+    text-align: center;
+}
+.icons a .text {
+    position: absolute;
+    bottom: -5px;
+    transition: bottom 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+.icons a:hover .text {
+    bottom: -35px;
+    opacity: 1;
+}
