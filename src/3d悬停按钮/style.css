@@ -21,7 +21,7 @@ body {
     display: block;
 }
 .icons a .layer {
-    width: 55px;
+    min-width: 55px;
     height: 55px;
     transition: all 0.3s ease-in-out;
 }

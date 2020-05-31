@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            html,
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                background-color: #000;
+            }
+            button {
+                position: relative;
+                width: 200px;
+                height: 60px;
+                margin: 0 35px;
+                border-radius: 50px;
+                border: none;
+                outline: none;
+                background-color: #111;
+                color: #fff;
+                cursor: pointer;
+                font-size: 20px;
+            }
+            button {
+                background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+                background-size: 400%;
+            }
+            button::before {
+                content: '';
+                position: absolute;
+                background: inherit;
+                top: -5px;
+                right: -5px;
+                left: -5px;
+                bottom: -5px;
+                border-radius: 50px;
+                filter: blur(20px);
+                opacity: 0;
+                transition: opacity 0.5s;
+            }
+            button:hover::before {
+                opacity: 1;
+                z-index: -1;
+            }
+            button:hover {
+                z-index: 1;
+                animation: glow 8s linear infinite;
+            }
+            @keyframes glow {
+                0% {
+                    background-position: 100%;
+                }
+                100% {
+                    background-position: 400%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <button>hover me</button>
+    </body>
+</html>
