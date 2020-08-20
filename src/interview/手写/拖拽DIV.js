@@ -7,8 +7,9 @@ div.addEventListener('mousedown', (e) => {
   position = [e.clientX, e.clientY];
 });
 
-div.addEventListener('mousemove', (e) => {
+document.addEventListener('mousemove', (e) => {
   if (dragging === false) return;
+  // 偏移量
   const detalX = e.clientX - position[0];
   const detalY = e.clientY - position[1];
 
