@@ -16,12 +16,14 @@ xhr.onreadystatechange = () => {
 xhr.timeout = 1000;
 
 // 当请求超时时，会触发 ontimeout 方法
-xhr.ontimeout = () => console.log('请求超时');
+xhr.ontimeout = () => {
+  console.log('请求超时')
+}
 
 // 封装一下
 const ajax = (options) => {
   const url = options.url;
-  const method = options.method.toLowerCase() || 'get';
+  const method = options.method?.toLowerCase() || 'get';
   const data = options.data;
   const xhr = new XMLHttpRequest();
 
@@ -29,7 +31,7 @@ const ajax = (options) => {
 
   return new Promise((resolve, reject) => {
     xhr.ontimeout = () => reject('timeout');
-    xhr.onerror = () => reject(error);
+    xhr.onerror = () => reject('error');
     xhr.onreadystatechange = () => {
       if (xhr.readyState === 4) {
         if (xhr.status >= 200 || xhr.status < 300 || xhr.status === 304) {
