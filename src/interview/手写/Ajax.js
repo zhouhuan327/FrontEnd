@@ -1,5 +1,5 @@
 const xhr = new XMLHttpRequest();
-xhr.open('GET', '/url');
+xhr.open("GET", "/url");
 xhr.onreadystatechange = () => {
   // xhr.readyStatus==0 尚未调用 open 方法
   // xhr.readyStatus==1 已调用 open 但还未发送请求（未调用 send）
@@ -17,21 +17,25 @@ xhr.timeout = 1000;
 
 // 当请求超时时，会触发 ontimeout 方法
 xhr.ontimeout = () => {
-  console.log('请求超时')
-}
+  console.log("请求超时");
+};
 
 // 封装一下
+const getQuerires = (object = {}, prefix = "") =>
+  Object.entries(object)
+    .reduce((acc, [key, value]) => (acc += `${key}=${value}&`), prefix)
+    .slice(0, -1);
 const ajax = (options) => {
-  const url = options.url;
-  const method = options.method?.toLowerCase() || 'get';
-  const data = options.data;
-  const xhr = new XMLHttpRequest();
+  let url = options.url || "";
+  const method = options.method?.toLowerCase() || "get";
+  const data = options.data || {};
 
+  const xhr = new XMLHttpRequest();
   xhr.timeout = options.timeout && null;
 
   return new Promise((resolve, reject) => {
-    xhr.ontimeout = () => reject('timeout');
-    xhr.onerror = () => reject('error');
+    xhr.ontimeout = () => reject("timeout");
+    xhr.onerror = () => reject("error");
     xhr.onreadystatechange = () => {
       if (xhr.readyState === 4) {
         if (xhr.status >= 200 || xhr.status < 300 || xhr.status === 304) {
@@ -41,8 +45,11 @@ const ajax = (options) => {
         }
       }
     };
+    if (method === "get") {
+      url = getQuerires(data, url + "?");
+    }
     xhr.open(method, url);
-    xhr.setRequestHeader('content-type', 'application/json');
-    xhr.send(JSON.stringify(data));
+    xhr.setRequestHeader("content-type", "application/json");
+    data ? xhr.send() : xhr.send(data);
   });
 };
