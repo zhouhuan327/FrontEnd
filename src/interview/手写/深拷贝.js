@@ -6,6 +6,7 @@ function deepClone(target,cache = new Map()) {
         return target
     }
     // 判断四种特殊情况
+    const l = () => {}
     let dist;
     if(target instanceof Array) {
         dist = []
