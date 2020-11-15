@@ -10,6 +10,7 @@ module.exports.clear = async () => {
 };
 module.exports.showAll = async () => {
   const list = await db.read();
+  debugger
   inquirer
     .prompt({
       type: "list",
