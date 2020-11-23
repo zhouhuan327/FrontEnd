@@ -11,6 +11,5 @@ const bubbleSort = (arr) => {
   }
   return arr;
 };
-console.log(bubbleSort([]));
-console.log(bubbleSort([9, 1]));
-console.log(bubbleSort([3, 4, 6, 9, 1, 7]));
+
+require("./sortTest").testSort(bubbleSort);

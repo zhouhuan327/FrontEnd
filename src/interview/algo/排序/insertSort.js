@@ -16,6 +16,5 @@ const insertSort = (arr) => {
   }
   return arr;
 };
-console.log(insertSort([1, 1, 1]));
 
-console.log(insertSort([3, 2, 1]));
+require("./sortTest").testSort(insertSort);

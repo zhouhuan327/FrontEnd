@@ -21,4 +21,5 @@ const countSort = (arr) => {
   }
   return res;
 };
-console.log(countSort([3, 1, 2, 4, 4, 4, 9]));
+
+require("./sortTest").testSort(countSort);

@@ -13,8 +13,5 @@ const selectSort = (arr) => {
   }
   return arr;
 };
-console.log(selectSort([]));
 
-console.log(selectSort([2, 1, 7, 3, 4, 5, 4]));
-
-console.log(selectSort([11, 11, 11]));
+require("./sortTest").testSort(selectSort);

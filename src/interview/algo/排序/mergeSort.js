@@ -27,8 +27,4 @@ const sort = (arr) => {
   return merge(sort(left), sort(right));
 };
 
-console.log(sort([]));
-console.log(sort([1]));
-console.log(sort([1, 2]));
-console.log(sort([1, 3, 2]));
-console.log(sort([2, 2, 2, 2, 1]));
+require("./sortTest").testSort(sort);
