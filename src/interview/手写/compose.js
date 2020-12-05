@@ -5,6 +5,7 @@ function compose(...funcs) {
     }, x);
   };
 }
+// const compose = (...funcs) => (x) => funcs.reduce((acc, fn) => fn(acc), x);
 
 function upperCase(input) {
   return input && typeof input === "string" ? input.toUpperCase() : input;
@@ -16,4 +17,4 @@ function trim(input) {
 
 const composedFunc = compose(trim, upperCase);
 
-console.log(composedFunc("  a b cdf   df  "));
+console.log(composedFunc("  abcdfdf  "));

@@ -25,13 +25,13 @@ const getQuerires = (object = {}, prefix = "") =>
   Object.entries(object)
     .reduce((acc, [key, value]) => (acc += `${key}=${value}&`), prefix)
     .slice(0, -1);
-const ajax = (options) => {
-  let url = options.url || "";
-  const method = options.method?.toLowerCase() || "get";
-  const data = options.data || {};
+const ajax = ({ url = "", method = "get", data, timeout }) => {
+  // let url = options.url || "";
+  // const method = options.method?.toLowerCase() || "get";
+  // const data = options.data || {};
 
   const xhr = new XMLHttpRequest();
-  xhr.timeout = options.timeout && null;
+  xhr.timeout = timeout || null;
 
   return new Promise((resolve, reject) => {
     xhr.ontimeout = () => reject("timeout");
@@ -41,7 +41,7 @@ const ajax = (options) => {
         if (xhr.status >= 200 || xhr.status < 300 || xhr.status === 304) {
           resolve(xhr.responseText);
         } else {
-          reject();
+          reject(xhr.statusText);
         }
       }
     };
