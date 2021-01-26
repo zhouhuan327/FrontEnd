@@ -5,11 +5,9 @@ const merge = (left, right) => {
   let res = [];
   while (i < left.length && j < right.length) {
     if (left[i] < right[j]) {
-      res.push(left[i]);
-      i++;
+      res.push(left[i++]);
     } else {
-      res.push(right[j]);
-      j++;
+      res.push(right[j++]);
     }
   }
   if (i === left.length) {
