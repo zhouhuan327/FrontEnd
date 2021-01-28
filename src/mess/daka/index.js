@@ -88,12 +88,10 @@ async function run() {
 
     console.log(chalk.yellow('发请求...'));
     const answerJSON = JSON.stringify({answerData})
-    console.log(answerJSON)
     const res = await add(questionnaireId, USERID,answerJSON)
-    if(res.code == 000000) {
+    if(res.rspcode == 000000) {
         console.log(chalk.green('成功'))
     }
-    console.log(res)
   } catch (e) {
     console.log(chalk.red(e));
   }
