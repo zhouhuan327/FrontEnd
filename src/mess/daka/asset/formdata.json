@@ -1,0 +1,160 @@
+{
+    "answerData": [
+      {
+        "itemId": "b4253dd7-0d25-468e-b248-619c9e29546b",
+        "itemType": "radio",
+        "answerArr": ["fe79c42f-4f7c-4011-8d0a-870fdfb112ca"]
+      },
+      {
+        "itemId": "10ac98d8-4c21-409f-8a55-00fdc1df99ca",
+        "itemType": "checkbox",
+        "answerArr": ["862604d4-ede4-47e6-8027-095d2594bba2"]
+      },
+      {
+        "itemId": "72f4945d-409d-4dda-b932-130a3c5d4795",
+        "itemType": "checkbox",
+        "answerArr": ["95b90c1e-e8f6-4fba-b520-ff35a565f29c"]
+      },
+      {
+        "itemId": "361096a7-c070-4ee6-a69c-ac2fbbcb83fd",
+        "itemType": "checkbox",
+        "answerArr": ["9dfa0e5f-e26c-4e26-b766-94a11dd79830"]
+      },
+      {
+        "itemId": "6b98f380-7f06-477c-910a-8ca39ac31613",
+        "itemType": "radio",
+        "answerArr": ["70858bce-bebe-498b-b933-7fd979080759"]
+      },
+      {
+        "itemId": "8e94753d-b3cd-4185-a262-13d642cea2b4",
+        "itemType": "radio",
+        "answerArr": ["4158440e-9588-4f98-bb5d-a8a10c060e34"]
+      },
+      {
+        "itemId": "329ac284-c433-4d8f-ac5a-9f6dd9a801da",
+        "itemType": "radio",
+        "answerArr": ["393b536a-3eb0-4039-9383-4036c64e845d"]
+      },
+      {
+        "itemId": "3648d8a7-0491-4874-abd7-15b364bdda17",
+        "itemType": "radio",
+        "answerArr": ["985b7ffc-7e92-4691-a7ee-07f9ac5951c5"]
+      },
+      {
+        "itemId": "41616c56-8e4e-4be6-91ba-ba75e97a6ed8",
+        "itemType": "radio",
+        "answerArr": ["978876a7-1a25-42ef-8aa7-f8b42a2f27b4"]
+      },
+      {
+        "itemId": "ac993a8f-acbb-4037-9510-db21525f431e",
+        "itemType": "radio",
+        "answerArr": ["c85940b0-60d2-4bc6-890e-83f976aea939"]
+      },
+      {
+        "itemId": "cefaf0b1-733b-467b-8ee7-03dce73c0253",
+        "itemType": "radio",
+        "answerArr": ["09b70b1d-6c18-43ac-83c2-d784dada48df"]
+      },
+      {
+        "itemId": "5b9bb946-284e-4e22-b8f0-e30e892d92e2",
+        "itemType": "radio",
+        "answerArr": ["17dec788-554e-46e0-bbd8-a6d299482620"]
+      },
+      {
+        "itemId": "4d30c65d-5040-468e-acf1-9e886e91c76d",
+        "itemType": "radio",
+        "answerArr": ["dd5b3ea2-76c8-41f3-970c-889355a3a0c5"]
+      },
+      {
+        "itemId": "28cfe28c-9756-48ea-9f18-441bb99dad0e",
+        "itemType": "radio",
+        "answerArr": ["a3f7bdf7-c3a7-4417-b260-fbdc58d2838c"]
+      },
+      {
+        "itemId": "9ed16a80-2635-40d0-a976-21bfea88cd9d",
+        "itemType": "radio",
+        "answerArr": ["618ba531-be54-4905-b9a9-5af8906336f0"]
+      },
+      {
+        "itemId": "bdce8f83-f806-4e32-8724-999ad0cff5dc",
+        "itemType": "radio",
+        "answerArr": ["55cbae19-1b82-4215-b86e-e6b4989f2759"]
+      },
+      {
+        "itemId": "ed19d852-3964-43cc-8d06-0dced8bbb8f4",
+        "itemType": "radio",
+        "answerArr": ["182d0ff0-173d-4395-92fc-40d7e12fc454"]
+      },
+      {
+        "itemId": "d5062e33-2e06-44a5-9781-836cef3414ea",
+        "itemType": "textFill",
+        "answerArr": ["15058341798"]
+      },
+      {
+        "itemId": "dcf15bfd-6bae-4458-8cfa-fd26d9e161fb",
+        "itemType": "textFill",
+        "answerArr": ["王晓燕"]
+      },
+      {
+        "itemId": "f2144fa8-f5ed-40de-bb06-849b5bbc4e5f",
+        "itemType": "textFill",
+        "answerArr": ["15258621598"]
+      },
+      {
+        "itemId": "3e0ae78c-935b-4bbb-83e3-1d420b740d7c",
+        "itemType": "areaFill",
+        "answerArr": ["浙江省,温州市,苍南县,灵溪镇沪山街68"]
+      },
+      {
+        "itemId": "517112e0-bab0-4936-b2e9-877c3be070f0",
+        "itemType": "areaFill",
+        "answerArr": ["浙江省温州市苍南县灵溪镇永安堂"]
+      },
+      {
+        "itemId": "1bc58f9c-7e36-44e1-a68a-c3af14b60651",
+        "itemType": "areaFill",
+        "answerArr": [""]
+      },
+      {
+        "itemId": "66ff103c-c849-4ec0-8e9a-77772e99e884",
+        "itemType": "areaFill",
+        "answerArr": [""]
+      },
+      {
+        "itemId": "681d8c49-d68d-4cf8-b662-dc6bd677cc65",
+        "itemType": "areaFill",
+        "answerArr": [""]
+      },
+      {
+        "itemId": "d760676a-b394-40f5-b345-00ccecebdd43",
+        "itemType": "areaFill",
+        "answerArr": [""]
+      },
+      {
+        "itemId": "5ffde76c-6275-4451-bd8b-572738fe56b5",
+        "itemType": "areaFill",
+        "answerArr": [""]
+      },
+      {
+        "itemId": "aca2bbea-5cec-4636-b4c4-12b1964d22ae",
+        "itemType": "areaFill",
+        "answerArr": [""]
+      },
+      {
+        "itemId": "ddb5483a-b9b1-41ec-acfd-78315362892f",
+        "itemType": "areaFill",
+        "answerArr": [""]
+      },
+      {
+        "itemId": "b6c4a6cd-8a8c-4f91-b406-dc5243f25644",
+        "itemType": "areaFill",
+        "answerArr": [""]
+      },
+      {
+        "itemId": "34c1aef8-0c8a-41e6-a198-9293b61d6b03",
+        "itemType": "areaFill",
+        "answerArr": ["杭州市滨江区立业园"]
+      }
+    ]
+  }
+  
