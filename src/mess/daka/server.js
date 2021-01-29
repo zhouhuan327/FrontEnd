@@ -13,11 +13,14 @@ const request = (url = '', body = {}) => {
       method: 'post',
       body: params,
       headers: {
+        Host: 'daka.zcmu.edu.cn',
         Connection: 'keep-alive',
-        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        origin: 'https://daka.zcmu.edu.cn',
         'User-Agent':
           'Mozilla/5.0 (Linux; Android 10; SM-G9708 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045513 Mobile Safari/537.36 MMWEBID/8563 MicroMessenger/8.0.1840(0x28000037) Process/tools WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64',
-          'Cookie':'0283DEA7DEF3FC3FD954B93808FA0D0E'
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
       },
     })
       .then((response) => response.json())
