@@ -6,7 +6,7 @@ program.option("-x", "--xxx", "daka cli");
 
 program
   .version('0.1.0')
-  .arguments('<username>')
+  .arguments('<xuehao>')
   .description('test command', {
     xuehao: '学号后两位'
   })

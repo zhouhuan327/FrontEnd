@@ -105,7 +105,7 @@ async function run(id) {
   try {
     console.log(chalk.green('正在获取表单id...'));
     const quesInfo = await getQuesId(USERID);
-    const questionnaireId = quesInfo?.rows?.length > 0 && quesInfo.rows[0].ID;
+    const questionnaireId = quesInfo.rows.length > 0 && quesInfo.rows[0].ID;
     console.log('表单id:', chalk.cyan(questionnaireId));
 
     console.log(chalk.green('正在获取表单详情...'));
