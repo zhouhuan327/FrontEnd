@@ -9,7 +9,17 @@ const request = (url = '', body = {}) => {
     params.append(key, value);
   });
   return new Promise((resolve, reject) => {
-    fetch(url, { method: 'post', body: params })
+    fetch(url, {
+      method: 'post',
+      body: params,
+      headers: {
+        Connection: 'keep-alive',
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        'User-Agent':
+          'Mozilla/5.0 (Linux; Android 10; SM-G9708 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045513 Mobile Safari/537.36 MMWEBID/8563 MicroMessenger/8.0.1840(0x28000037) Process/tools WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64',
+          'Cookie':'0283DEA7DEF3FC3FD954B93808FA0D0E'
+      },
+    })
       .then((response) => response.json())
       .then((res) => {
         resolve(res);
@@ -111,9 +121,9 @@ async function run(id) {
 
     console.log(chalk.green('正在获取表单详情...'));
     const detail = await getQuesDetail(questionnaireId, USERID);
-    if(detail.rows && detail.rows[0] && detail.rows[0].HASANSWER === true) {
-      console.log(chalk.magenta('已经打过了'))
-      return
+    if (detail.rows && detail.rows[0] && detail.rows[0].HASANSWER === true) {
+      console.log(chalk.magenta('已经打过了'));
+      return;
     }
     console.log('字段个数:', chalk.cyan(detail.rows.length));
     console.log(chalk.green('正在生成提交字段..'));
