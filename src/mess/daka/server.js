@@ -94,7 +94,7 @@ async function run(id) {
     console.log(chalk.red('输入学号尾号'));
     return;
   }
-  if (![25, 24].includes(id)) {
+  if (![23, 24, 25, 26, 27, 28].includes(id)) {
     console.log(chalk.red('暂不支持这个尾号'));
     return;
   }
@@ -124,4 +124,4 @@ async function run(id) {
     console.log(chalk.red(e));
   }
 }
-module.exports.run = run
+module.exports.run = run;
