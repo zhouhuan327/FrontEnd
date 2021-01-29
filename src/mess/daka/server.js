@@ -33,8 +33,19 @@ const add = (questionnaireId, userId, answerData) =>
   request(`${api}/addQuestionnaireRecord`, {
     questionnaireId,
     userId,
-    answerData
+    answerData,
   });
+// 值为未填项的options的数组下表
+const emptyAnswerMap = {
+  Q4: 0,
+  Q7: 0,
+  Q13: 0,
+  Q20: 1, // 是否聚餐
+  Q22: 1, // 是否来校
+  Q30: 3,
+  Q31: 0,
+  Q32: 4,
+};
 const renderAnswerData = (detail) => {
   const answerData = [];
   const rows = detail && detail.rows;
@@ -61,14 +72,33 @@ const renderAnswerData = (detail) => {
       const options = item.OPTIONS;
       // 根据CHECKED 找到选中项
       const target = options.find((o) => o.CHECKED === true);
-      answerArr[0] = target.SUBID;
+      if (target) {
+        answerArr[0] = target.SUBID;
+      } else {
+        // 未填的
+        const targetIndex = emptyAnswerMap[item.INDEX];
+        answerArr[0] = options[targetIndex].SUBID;
+        console.log(
+          '未填项:',
+          `${item.INDEX} ${item.TITLE}`,
+          chalk.cyan(`填了: ${options[targetIndex].OPTION}`)
+        );
+      }
     }
     answerData.push({ itemId, itemType, answerArr });
   }
   return answerData;
 };
-async function run() {
-  const USERID = '201912243102025';
+async function run(id) {
+  if (id > 100) {
+    console.log(chalk.red('输入学号尾号'));
+    return;
+  }
+  if (![25, 24].includes(id)) {
+    console.log(chalk.red('暂不支持这个尾号'));
+    return;
+  }
+  const USERID = `2019122431020${id}`;
   console.log(chalk.magenta(' ---RUN---'));
 
   console.log(chalk.green('学号', USERID));
@@ -81,19 +111,17 @@ async function run() {
     console.log(chalk.green('正在获取表单详情...'));
     const detail = await getQuesDetail(questionnaireId, USERID);
     console.log('字段个数:', chalk.cyan(detail.rows.length));
-
     console.log(chalk.green('正在生成提交字段..'));
     const answerData = renderAnswerData(detail);
     console.log('提交字段个数:', chalk.cyan(answerData.length));
-
-    console.log(chalk.yellow('发请求...'));
-    const answerJSON = JSON.stringify({answerData})
-    const res = await add(questionnaireId, USERID,answerJSON)
-    if(res.rspcode == 000000) {
-        console.log(chalk.green('成功'))
+    console.log(chalk.green('发请求...'));
+    const answerJSON = JSON.stringify({ answerData });
+    const res = await add(questionnaireId, USERID, answerJSON);
+    if (res.rspcode == 000000) {
+      console.log(chalk.green('成功'));
     }
   } catch (e) {
     console.log(chalk.red(e));
   }
 }
-run();
+module.exports.run = run

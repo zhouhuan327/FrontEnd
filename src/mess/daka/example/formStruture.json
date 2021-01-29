@@ -9,20 +9,27 @@
   "inputStream": null,
   "locale": "zh_CN",
   "rows": [
-    
+    {
+      "SHOWRESULT": true,
+      "QUESTIONTITLE": "学生每日健康打卡2021年1月29日",
+      "HASANSWER": false,
+      "BETWEEN": "2021-01-29 05-00 至 2021-01-29 23-59",
+      "STATE": "进行中",
+      "SUBTITLE": "为更好的开展我校疫情防御工作，请师生认真填写以下内容"
+    },
     {
       "ANSWERTEXT": "15058341798",
       "TITLE": "手机号码",
       "INDEX": "Q1",
-      "ITEMID": "d5062e33-2e06-44a5-9781-836cef3414ea",
+      "ITEMID": "e93b46db-7659-4692-bb08-61358f7957fb",
       "TYPE": "textFill",
       "REQUIRE": true
     },
     {
-      "ANSWERTEXT": "浙江省,温州市,苍南县,灵溪镇沪山街68",
+      "ANSWERTEXT": "浙江省,温州市,苍南县,灵溪镇沪山街68号",
       "TITLE": "家庭住址",
       "INDEX": "Q2",
-      "ITEMID": "3e0ae78c-935b-4bbb-83e3-1d420b740d7c",
+      "ITEMID": "4499415d-cd96-46e6-8874-8c4d3c2f1820",
       "TYPE": "areaFill",
       "REQUIRE": true
     },
@@ -30,65 +37,65 @@
       "ANSWERTEXT": "浙江省温州市苍南县灵溪镇永安堂",
       "TITLE": "目前所在位置",
       "INDEX": "Q3",
-      "ITEMID": "517112e0-bab0-4936-b2e9-877c3be070f0",
+      "ITEMID": "4d65c128-7192-4020-bdc9-70e77993ff7f",
       "TYPE": "areaFill",
       "REQUIRE": true
     },
     {
       "TITLE": "身份类型",
       "INDEX": "Q4",
-      "ITEMID": "b4253dd7-0d25-468e-b248-619c9e29546b",
+      "ITEMID": "87b59528-8cc3-4c64-93b5-689136c6a8e9",
       "OPTIONS": [
         {
-          "SUBID": "fe79c42f-4f7c-4011-8d0a-870fdfb112ca",
+          "SUBID": "a2bb19ca-1256-4827-840f-213d2fd8041a",
           "IMGS": "",
           "OPTION": "A.内地学生（滨文校区，本部本科生）",
-          "CHECKED": true
+          "CHECKED": false
         },
         {
-          "SUBID": "1db1f7a0-7568-455e-b9f8-f145fc6a9a9f",
+          "SUBID": "0cb0ee34-dce4-44b3-bc59-bd1d5307cd2a",
           "IMGS": "",
           "OPTION": "B.内地学生（滨文校区，本部研究生）",
           "CHECKED": false
         },
         {
-          "SUBID": "6dd9e874-e873-49d3-a03c-659ad2c8e496",
+          "SUBID": "a5536b81-c49d-4ae7-853d-5055739244c0",
           "IMGS": "",
           "OPTION": "C.内地学生（滨文校区，滨江学院本科生）",
           "CHECKED": false
         },
         {
-          "SUBID": "281f7a7d-b7a7-470b-a1ac-f041a8460bbc",
+          "SUBID": "fcc19ccc-943e-4dd1-8984-38ac43bda428",
           "IMGS": "",
           "OPTION": "D.内地学生（富春校区，本部本科生）",
           "CHECKED": false
         },
         {
-          "SUBID": "9037b0eb-687c-4c44-bbd3-0ed92086b6df",
+          "SUBID": "f0a8a79a-8c49-4438-8ef8-d43bca223dff",
           "IMGS": "",
           "OPTION": "E.内地学生（富春校区，本部研究生）",
           "CHECKED": false
         },
         {
-          "SUBID": "88194c69-ebc8-47f3-b939-4f49d1998890",
+          "SUBID": "608abffc-2f05-4f91-abf6-80c403550280",
           "IMGS": "",
           "OPTION": "F.内地学生（富春校区，滨江学院本科生）",
           "CHECKED": false
         },
         {
-          "SUBID": "5508aa04-763c-4ce9-9081-df4958be03b5",
+          "SUBID": "68d99e52-f080-4d40-930b-76c73552cb63",
           "IMGS": "",
           "OPTION": "G.港澳台学生",
           "CHECKED": false
         },
         {
-          "SUBID": "48dd5883-5ee9-49f2-b1bc-a61b2c08780b",
+          "SUBID": "64f4d7f4-7def-44a3-812c-384c0318d38b",
           "IMGS": "",
           "OPTION": "H.留学生",
           "CHECKED": false
         },
         {
-          "SUBID": "f3b2f652-8970-4e0b-add5-f615083691a4",
+          "SUBID": "a98a2a95-a30c-4cff-a59d-1cec31fbad88",
           "IMGS": "",
           "OPTION": "I.内地学生(继续教育学生)",
           "CHECKED": false
@@ -101,7 +108,7 @@
       "ANSWERTEXT": "王晓燕",
       "TITLE": "紧急联系人姓名（学生填写家长或其他监护人）",
       "INDEX": "Q5",
-      "ITEMID": "dcf15bfd-6bae-4458-8cfa-fd26d9e161fb",
+      "ITEMID": "f6f3adec-9886-4f3c-a72d-bd1280598be1",
       "TYPE": "textFill",
       "REQUIRE": true
     },
@@ -109,41 +116,41 @@
       "ANSWERTEXT": "15258621598",
       "TITLE": "紧急联系人手机号码",
       "INDEX": "Q6",
-      "ITEMID": "f2144fa8-f5ed-40de-bb06-849b5bbc4e5f",
+      "ITEMID": "86f32641-8e3e-4225-94f0-b462b7e3a6b9",
       "TYPE": "textFill",
       "REQUIRE": true
     },
     {
       "TITLE": "本人身体是否有不适",
       "INDEX": "Q7",
-      "ITEMID": "10ac98d8-4c21-409f-8a55-00fdc1df99ca",
+      "ITEMID": "4c9f38ce-7e7a-4baf-8c1b-f252a07de5e1",
       "OPTIONS": [
         {
-          "SUBID": "862604d4-ede4-47e6-8027-095d2594bba2",
+          "SUBID": "addfc6e9-2199-42db-b2d1-572dd0e66bb7",
           "IMGS": "",
           "OPTION": "A.健康",
-          "CHECKED": true
+          "CHECKED": false
         },
         {
-          "SUBID": "1f2a39e5-b2b7-4c9f-b0b0-9e83e47536ca",
+          "SUBID": "f06df7d7-206a-447a-81da-dcc2e7312389",
           "IMGS": "",
           "OPTION": "B.发热",
           "CHECKED": false
         },
         {
-          "SUBID": "5073a40b-879d-47bc-800f-d166eebff824",
+          "SUBID": "55a1e0e6-6836-4ce4-8a56-f4ef2ff168b0",
           "IMGS": "",
           "OPTION": "C.咳嗽",
           "CHECKED": false
         },
         {
-          "SUBID": "04783db4-57ec-4abe-9537-4e6820d79c63",
+          "SUBID": "8271d65c-6e93-4a2d-a22d-83d178ac2713",
           "IMGS": "",
           "OPTION": "D.腹泻",
           "CHECKED": false
         },
         {
-          "SUBID": "015d1c52-8989-4946-a5ea-299d809ec18c",
+          "SUBID": "20a3a0b8-9120-40be-934c-cdc1a4ba67a5",
           "IMGS": "",
           "OPTION": "E.其他",
           "CHECKED": false
@@ -155,22 +162,22 @@
     {
       "TITLE": "本人或共同生活的家属14日内是否接触以下人群",
       "INDEX": "Q8",
-      "ITEMID": "72f4945d-409d-4dda-b932-130a3c5d4795",
+      "ITEMID": "65417bf9-4c0a-4014-acfc-7ddb42350eb6",
       "OPTIONS": [
         {
-          "SUBID": "cb0d2e5c-6498-4e23-a43b-6401a0d0e870",
+          "SUBID": "3e0865c2-5be0-4986-af13-ed5ee4b163a5",
           "IMGS": "",
           "OPTION": "14日内有中高风险地区来往经历的人群",
           "CHECKED": false
         },
         {
-          "SUBID": "5c0ff880-6783-4b10-b799-9c3aa76ab3ca",
+          "SUBID": "abd940eb-6fde-47dc-8b69-35b4eefb4418",
           "IMGS": "",
           "OPTION": "14日内入境人员",
           "CHECKED": false
         },
         {
-          "SUBID": "95b90c1e-e8f6-4fba-b520-ff35a565f29c",
+          "SUBID": "d685066d-f65c-4f03-b833-ae8493493476",
           "IMGS": "",
           "OPTION": "未接触以上人群",
           "CHECKED": true
@@ -182,34 +189,34 @@
     {
       "TITLE": "本人或共同生活的家属14日内是否去过以下地点",
       "INDEX": "Q9",
-      "ITEMID": "361096a7-c070-4ee6-a69c-ac2fbbcb83fd",
+      "ITEMID": "568bc672-2f0a-4f01-a904-df5b4bed6b83",
       "OPTIONS": [
         {
-          "SUBID": "9de774ec-ed67-4b51-a5fb-f5fd25f37dc5",
+          "SUBID": "d9d82f1e-bdb3-47f6-b459-5095748ffe46",
           "IMGS": "",
           "OPTION": "中高风险地区",
           "CHECKED": false
         },
         {
-          "SUBID": "5a2e7496-ed92-4289-b332-58a61a61b8e8",
+          "SUBID": "e5f43a80-7c70-4af1-91b6-8359a4206b90",
           "IMGS": "",
           "OPTION": "国（境）外",
           "CHECKED": false
         },
         {
-          "SUBID": "8170f048-f9c9-46d1-b6af-8a4b372b1295",
+          "SUBID": "e7e2a22e-64da-40c4-80ff-8f3ca338d95e",
           "IMGS": "",
           "OPTION": "浙江省外其他城市",
           "CHECKED": false
         },
         {
-          "SUBID": "88717dc7-e8e0-4f67-97fa-04e5e2604976",
+          "SUBID": "955a41c9-537f-4908-8cdb-869d3c6c6da9",
           "IMGS": "",
           "OPTION": "浙江省内其他城市",
           "CHECKED": false
         },
         {
-          "SUBID": "9dfa0e5f-e26c-4e26-b766-94a11dd79830",
+          "SUBID": "b2919924-2936-4ec5-a8c6-f448f9fe02da",
           "IMGS": "",
           "OPTION": "未离开杭州",
           "CHECKED": true
@@ -221,16 +228,16 @@
     {
       "TITLE": "14日内本人或家人是否接触确诊病例",
       "INDEX": "Q10",
-      "ITEMID": "6b98f380-7f06-477c-910a-8ca39ac31613",
+      "ITEMID": "5db4fc7c-41bb-4f20-8fc1-c4eac094ed12",
       "OPTIONS": [
         {
-          "SUBID": "70858bce-bebe-498b-b933-7fd979080759",
+          "SUBID": "63bb20fa-635a-40dd-9e4d-20322628b7b1",
           "IMGS": "",
           "OPTION": "否",
           "CHECKED": true
         },
         {
-          "SUBID": "ff15eed0-7fd0-4ec0-b86a-9980d7cea58d",
+          "SUBID": "a705b4b7-bf9f-4c39-8172-d13654bd1337",
           "IMGS": "",
           "OPTION": "是",
           "CHECKED": false
@@ -242,16 +249,16 @@
     {
       "TITLE": "14日内本人或家人是否接触疑似病例",
       "INDEX": "Q11",
-      "ITEMID": "8e94753d-b3cd-4185-a262-13d642cea2b4",
+      "ITEMID": "15cd23b0-5c85-429f-b35b-bb7127ab1708",
       "OPTIONS": [
         {
-          "SUBID": "4158440e-9588-4f98-bb5d-a8a10c060e34",
+          "SUBID": "2e0f5640-ef72-4b63-a5b4-eb150989eec7",
           "IMGS": "",
           "OPTION": "否",
           "CHECKED": true
         },
         {
-          "SUBID": "c567ea35-26d2-49a3-a12e-3f324be5a7f4",
+          "SUBID": "b5448ed7-f965-4d7b-9f70-271e86874b09",
           "IMGS": "",
           "OPTION": "是",
           "CHECKED": false
@@ -264,35 +271,35 @@
       "ANSWERTEXT": "",
       "TITLE": "问题10或问题11回答“是”者填写具体情况",
       "INDEX": "Q12",
-      "ITEMID": "1bc58f9c-7e36-44e1-a68a-c3af14b60651",
+      "ITEMID": "11452691-2bb8-45ca-96f4-078c2c8dc677",
       "TYPE": "areaFill",
       "REQUIRE": false
     },
     {
       "TITLE": "目前本人的实际状态",
       "INDEX": "Q13",
-      "ITEMID": "329ac284-c433-4d8f-ac5a-9f6dd9a801da",
+      "ITEMID": "c9477d2f-8c4a-4604-95b5-bec35d65254f",
       "OPTIONS": [
         {
-          "SUBID": "393b536a-3eb0-4039-9383-4036c64e845d",
+          "SUBID": "4e4827aa-876a-4a9c-8182-88a6e8197eb9",
           "IMGS": "",
           "OPTION": "正常",
-          "CHECKED": true
+          "CHECKED": false
         },
         {
-          "SUBID": "3eb24d94-8757-43e2-a4c6-39d352689059",
+          "SUBID": "8c1f5001-2ba3-4d96-8185-f3474da3de1a",
           "IMGS": "",
           "OPTION": "被确定为疑似新冠肺炎",
           "CHECKED": false
         },
         {
-          "SUBID": "b39e3dcf-97e3-4341-a8c6-0c0be4550b92",
+          "SUBID": "ec5fd2b5-6aca-4f49-a02c-3971170c73e6",
           "IMGS": "",
           "OPTION": "被确诊为新冠肺炎",
           "CHECKED": false
         },
         {
-          "SUBID": "f455c52f-93a7-4a21-afa9-6fe26b044592",
+          "SUBID": "564536a2-6005-4306-b1b1-ffa11d697e7c",
           "IMGS": "",
           "OPTION": "已治愈",
           "CHECKED": false
@@ -304,40 +311,40 @@
     {
       "TITLE": "目前本人隔离状态",
       "INDEX": "Q14",
-      "ITEMID": "3648d8a7-0491-4874-abd7-15b364bdda17",
+      "ITEMID": "ec2562aa-1458-4087-bf53-a3a5dfb28873",
       "OPTIONS": [
         {
-          "SUBID": "985b7ffc-7e92-4691-a7ee-07f9ac5951c5",
+          "SUBID": "5b23a026-0c95-45ec-8d77-2595096aae57",
           "IMGS": "",
           "OPTION": "正常，未隔离",
           "CHECKED": true
         },
         {
-          "SUBID": "c45740b4-7507-421f-86c0-05e3c3b3cc6b",
+          "SUBID": "d42e2763-6410-45af-a1d8-820e97da758f",
           "IMGS": "",
           "OPTION": "自主居家医学观察(非强制)",
           "CHECKED": false
         },
         {
-          "SUBID": "cc7030aa-b1b9-4b22-b8d2-d6a3dc612b48",
+          "SUBID": "dad9a72b-7256-4725-bcef-3bd8a715af13",
           "IMGS": "",
           "OPTION": "被社区强制居家医学观察",
           "CHECKED": false
         },
         {
-          "SUBID": "43c9a083-00a9-4638-91a1-d52df4262753",
+          "SUBID": "3ef617c4-8f9e-4380-9ee0-e7c2da00ec94",
           "IMGS": "",
           "OPTION": "被地方疾控集中隔离",
           "CHECKED": false
         },
         {
-          "SUBID": "caca2a89-b665-48ff-9126-8a2876227249",
+          "SUBID": "e8a56786-56e0-465c-b27a-0ed417429885",
           "IMGS": "",
           "OPTION": "已解除社区强制居家医学观察",
           "CHECKED": false
         },
         {
-          "SUBID": "624ee29d-a951-42d1-b80f-606e96b9b7b9",
+          "SUBID": "c0e9546a-0efd-4249-bde3-4d03698b2903",
           "IMGS": "",
           "OPTION": "已解除地方疾控集中隔离",
           "CHECKED": false
@@ -350,23 +357,23 @@
       "ANSWERTEXT": "",
       "TITLE": "请填写本人体温（单位：℃），只需要填写体温的数值",
       "INDEX": "Q15",
-      "ITEMID": "205b37ee-f171-4ed6-a1a9-342e580d8057",
+      "ITEMID": "65860f42-da65-4ee2-beac-20ac0b5b731e",
       "TYPE": "textFill",
       "REQUIRE": false
     },
     {
       "TITLE": "周围人群中2人或以上出现发热、干咳等症状？",
       "INDEX": "Q16",
-      "ITEMID": "41616c56-8e4e-4be6-91ba-ba75e97a6ed8",
+      "ITEMID": "dc6db287-9e32-4c56-b449-914dc4c211c6",
       "OPTIONS": [
         {
-          "SUBID": "f35616da-92ae-45e8-be97-f126e0672719",
+          "SUBID": "e74ff73c-2acd-410a-a8d9-bcea96bb07e3",
           "IMGS": "",
           "OPTION": "是",
           "CHECKED": false
         },
         {
-          "SUBID": "978876a7-1a25-42ef-8aa7-f8b42a2f27b4",
+          "SUBID": "bb4496c5-0031-41d9-8e19-ea9c22f2b0df",
           "IMGS": "",
           "OPTION": "否",
           "CHECKED": true
@@ -378,28 +385,28 @@
     {
       "TITLE": "目前家人的实际状态",
       "INDEX": "Q17",
-      "ITEMID": "ac993a8f-acbb-4037-9510-db21525f431e",
+      "ITEMID": "43f8de73-de9e-42a3-82c4-12865ff5b0e1",
       "OPTIONS": [
         {
-          "SUBID": "c85940b0-60d2-4bc6-890e-83f976aea939",
+          "SUBID": "9dc62887-6c45-458d-92d7-5dc035e027bc",
           "IMGS": "",
           "OPTION": "正常",
           "CHECKED": true
         },
         {
-          "SUBID": "6eddf2c2-391c-4efe-acc6-b1b4f005b180",
+          "SUBID": "1569ba0a-3a0a-4246-8c38-a8bb366de5ac",
           "IMGS": "",
           "OPTION": "被确定为疑似新冠肺炎",
           "CHECKED": false
         },
         {
-          "SUBID": "15a0b619-af15-44bb-adaa-f9ad499ee6ea",
+          "SUBID": "93036acf-1d0e-4658-aebc-15bd6170c91c",
           "IMGS": "",
           "OPTION": "被确诊为新冠肺炎",
           "CHECKED": false
         },
         {
-          "SUBID": "906a261a-b3ec-4ee2-9ebe-5ed03030a929",
+          "SUBID": "71de7584-c9d6-4ab7-b5d4-0118cd77afe9",
           "IMGS": "",
           "OPTION": "已治愈",
           "CHECKED": false
@@ -411,40 +418,40 @@
     {
       "TITLE": "目前家人隔离状态",
       "INDEX": "Q18",
-      "ITEMID": "cefaf0b1-733b-467b-8ee7-03dce73c0253",
+      "ITEMID": "380c82d8-79fe-4aab-bade-56d571662503",
       "OPTIONS": [
         {
-          "SUBID": "09b70b1d-6c18-43ac-83c2-d784dada48df",
+          "SUBID": "ebfaf416-0787-45e2-bb7f-31a527287064",
           "IMGS": "",
           "OPTION": "正常，未隔离",
           "CHECKED": true
         },
         {
-          "SUBID": "442d0808-b6b3-457c-8985-47841f468e54",
+          "SUBID": "94e4ca62-2b28-4135-a807-682fc2404f9d",
           "IMGS": "",
           "OPTION": "自主居家医学观察(非强制)",
           "CHECKED": false
         },
         {
-          "SUBID": "7a70f877-e8b5-4434-acf6-63c7d1b61887",
+          "SUBID": "4a06e4c0-3555-4c9f-bed5-dd7c31655f4b",
           "IMGS": "",
           "OPTION": "被社区强制居家医学观察",
           "CHECKED": false
         },
         {
-          "SUBID": "35290654-8f87-45e5-b61a-96a53329499d",
+          "SUBID": "2785cda4-1d67-4881-a9d1-a14f64f37bdc",
           "IMGS": "",
           "OPTION": "被地方疾控集中隔离",
           "CHECKED": false
         },
         {
-          "SUBID": "cd7f6f46-96fb-4fa1-b741-2a6cafc32452",
+          "SUBID": "d0f2230d-5ab2-472a-9ad6-9022a89381db",
           "IMGS": "",
           "OPTION": "已解除社区强制居家医学观察",
           "CHECKED": false
         },
         {
-          "SUBID": "13eeb374-a94a-4b76-9dfc-ed7808b31d9a",
+          "SUBID": "69f6279b-1fbc-43f9-85e5-bb4c0234f0f0",
           "IMGS": "",
           "OPTION": "已解除地方疾控集中隔离",
           "CHECKED": false
@@ -457,26 +464,26 @@
       "ANSWERTEXT": "",
       "TITLE": "如果家人/同住人员有出现发热、干咳等症状，请描述患者姓名、与申报人关系及诊治情况",
       "INDEX": "Q19",
-      "ITEMID": "66ff103c-c849-4ec0-8e9a-77772e99e884",
+      "ITEMID": "6733d796-775c-4b60-a27b-7cf209c6f220",
       "TYPE": "areaFill",
       "REQUIRE": false
     },
     {
       "TITLE": "14天内是否有聚餐",
       "INDEX": "Q20",
-      "ITEMID": "5b9bb946-284e-4e22-b8f0-e30e892d92e2",
+      "ITEMID": "95c601ed-954b-4c1c-b608-d1dadc575ffc",
       "OPTIONS": [
         {
-          "SUBID": "389d125c-dd5b-4f3f-86c6-0e984f56b0a0",
+          "SUBID": "78ce3ae4-e85a-446f-970e-9753d694e537",
           "IMGS": "",
           "OPTION": "有",
           "CHECKED": false
         },
         {
-          "SUBID": "17dec788-554e-46e0-bbd8-a6d299482620",
+          "SUBID": "881451cd-d717-432b-8618-2dcb01f503b5",
           "IMGS": "",
           "OPTION": "无",
-          "CHECKED": true
+          "CHECKED": false
         }
       ],
       "TYPE": "radio",
@@ -486,26 +493,26 @@
       "ANSWERTEXT": "",
       "TITLE": "其他需要说明事项",
       "INDEX": "Q21",
-      "ITEMID": "681d8c49-d68d-4cf8-b662-dc6bd677cc65",
+      "ITEMID": "0c2f8ce4-7636-44fb-9c1c-2081e8835fe8",
       "TYPE": "areaFill",
       "REQUIRE": false
     },
     {
       "TITLE": "今日是否在校或来校",
       "INDEX": "Q22",
-      "ITEMID": "4d30c65d-5040-468e-acf1-9e886e91c76d",
+      "ITEMID": "f8379574-271f-4f47-a520-51ba2303f377",
       "OPTIONS": [
         {
-          "SUBID": "ed955c96-0e63-4667-ad2f-6f3d621bbf7d",
+          "SUBID": "76b400b4-a165-48c3-93aa-92e376ee7271",
           "IMGS": "",
           "OPTION": "是",
           "CHECKED": false
         },
         {
-          "SUBID": "dd5b3ea2-76c8-41f3-970c-889355a3a0c5",
+          "SUBID": "1e9ab548-66ae-49bd-a739-0f97c2595277",
           "IMGS": "",
           "OPTION": "否",
-          "CHECKED": true
+          "CHECKED": false
         }
       ],
       "TYPE": "radio",
@@ -514,28 +521,28 @@
     {
       "TITLE": "您申请的健康码颜色是什么",
       "INDEX": "Q23",
-      "ITEMID": "28cfe28c-9756-48ea-9f18-441bb99dad0e",
+      "ITEMID": "d86222dc-4a03-41a7-bf0d-ce7b55bbe9c7",
       "OPTIONS": [
         {
-          "SUBID": "a3f7bdf7-c3a7-4417-b260-fbdc58d2838c",
+          "SUBID": "5489daba-fd4e-4c83-8987-b153ce053a32",
           "IMGS": "",
           "OPTION": "绿码",
           "CHECKED": true
         },
         {
-          "SUBID": "89359645-5a51-4d51-af52-bf9f114eb6bf",
+          "SUBID": "0f9aff1f-0376-4d39-8932-989975a2fa7d",
           "IMGS": "",
           "OPTION": "黄码",
           "CHECKED": false
         },
         {
-          "SUBID": "e11f3886-7cfe-4b64-94ec-31df09c7983d",
+          "SUBID": "cd436a0f-0481-41d9-bbd7-77970fdec532",
           "IMGS": "",
           "OPTION": "红码",
           "CHECKED": false
         },
         {
-          "SUBID": "89d25fdd-e244-4e80-87c6-2d6a6b954d22",
+          "SUBID": "6e343abf-f4da-4945-aabc-570939188ebc",
           "IMGS": "",
           "OPTION": "橙码",
           "CHECKED": false
@@ -548,7 +555,7 @@
       "ANSWERTEXT": "",
       "TITLE": "已确诊及疑似病例请详细描述被传染过程",
       "INDEX": "Q24",
-      "ITEMID": "d760676a-b394-40f5-b345-00ccecebdd43",
+      "ITEMID": "1dfc0703-2add-43e4-8f17-fecf69708cc5",
       "TYPE": "areaFill",
       "REQUIRE": false
     },
@@ -556,7 +563,7 @@
       "ANSWERTEXT": "",
       "TITLE": "已确诊及疑似病例请详细描述发病时间和过程",
       "INDEX": "Q25",
-      "ITEMID": "5ffde76c-6275-4451-bd8b-572738fe56b5",
+      "ITEMID": "01a6c398-0a82-489c-9d4e-5c4e2c243ecf",
       "TYPE": "areaFill",
       "REQUIRE": false
     },
@@ -564,7 +571,7 @@
       "ANSWERTEXT": "",
       "TITLE": "已确诊及疑似病请填写确诊地点",
       "INDEX": "Q26",
-      "ITEMID": "aca2bbea-5cec-4636-b4c4-12b1964d22ae",
+      "ITEMID": "957d66cc-6622-48e9-a60f-2962a3f15532",
       "TYPE": "areaFill",
       "REQUIRE": false
     },
@@ -572,7 +579,7 @@
       "ANSWERTEXT": "",
       "TITLE": "已确诊及疑似病请填写就诊医院",
       "INDEX": "Q27",
-      "ITEMID": "ddb5483a-b9b1-41ec-acfd-78315362892f",
+      "ITEMID": "c0a2ea43-711d-4832-b207-0d8df51bbcb9",
       "TYPE": "areaFill",
       "REQUIRE": false
     },
@@ -580,7 +587,7 @@
       "ANSWERTEXT": "",
       "TITLE": "已确诊及疑似病请描述现在病情",
       "INDEX": "Q28",
-      "ITEMID": "b6c4a6cd-8a8c-4f91-b406-dc5243f25644",
+      "ITEMID": "dc5f12f3-4828-4e0a-9473-af7f7ed158c7",
       "TYPE": "areaFill",
       "REQUIRE": false
     },
@@ -588,35 +595,35 @@
       "ANSWERTEXT": "杭州市滨江区立业园",
       "TITLE": "开学后住宿地（住校内的学生填到寝室号；住校外的填杭州市XX区XX街道XX小区XX栋XX号；都未定的填“待定”）",
       "INDEX": "Q29",
-      "ITEMID": "34c1aef8-0c8a-41e6-a198-9293b61d6b03",
+      "ITEMID": "79b8ec8a-597d-4666-90ac-303d7cbf72f3",
       "TYPE": "areaFill",
       "REQUIRE": true
     },
     {
       "TITLE": "当天到校情况",
       "INDEX": "Q30",
-      "ITEMID": "9ed16a80-2635-40d0-a976-21bfea88cd9d",
+      "ITEMID": "82b937cb-2016-4157-87a0-6e9b320c9579",
       "OPTIONS": [
         {
-          "SUBID": "618ba531-be54-4905-b9a9-5af8906336f0",
+          "SUBID": "c55fc3f5-282b-4a13-a7cd-d6ce38d5ca99",
           "IMGS": "",
           "OPTION": "A.在校",
-          "CHECKED": true
+          "CHECKED": false
         },
         {
-          "SUBID": "a4173d69-a14b-4559-bfc4-922f5382ea4e",
+          "SUBID": "99a6e442-6493-4708-afd2-3d503e9a7073",
           "IMGS": "",
           "OPTION": "B.因发热未到或请假（体温37.3或以上）",
           "CHECKED": false
         },
         {
-          "SUBID": "c382baac-99ed-4086-aa8c-bbc279f8b245",
+          "SUBID": "4c4de4f4-21af-46dc-842b-46cf5d2b3465",
           "IMGS": "",
           "OPTION": "C.因其他原因未到或请假（除发热外）",
           "CHECKED": false
         },
         {
-          "SUBID": "db221739-460d-48ea-b60b-3e908c65e468",
+          "SUBID": "4b5eccd1-38c0-453f-8fec-36df52306541",
           "IMGS": "",
           "OPTION": "D.未返校",
           "CHECKED": false
@@ -628,28 +635,28 @@
     {
       "TITLE": "早晨、下午体温状况（早晨打卡后下午需再次填报提问状况）",
       "INDEX": "Q31",
-      "ITEMID": "bdce8f83-f806-4e32-8724-999ad0cff5dc",
+      "ITEMID": "23df6fef-ab6a-4652-a472-e2db10abf978",
       "OPTIONS": [
         {
-          "SUBID": "55cbae19-1b82-4215-b86e-e6b4989f2759",
+          "SUBID": "1eb14547-9236-4b15-b618-531133748c38",
           "IMGS": "",
           "OPTION": "A.上午体温<37.3°C",
-          "CHECKED": true
+          "CHECKED": false
         },
         {
-          "SUBID": "4888d66a-4902-4ccb-bb04-bcaf143f1a49",
+          "SUBID": "270fb9a8-0788-4262-8e8d-dc74a4252f0d",
           "IMGS": "",
           "OPTION": "B.上午体温>=37.3°C",
           "CHECKED": false
         },
         {
-          "SUBID": "1da9ade5-d9e2-441f-9c87-29eac3e22df5",
+          "SUBID": "a8dd0894-9388-48e0-8549-f2e9829cf840",
           "IMGS": "",
           "OPTION": "C.下午体温<37.3°C",
           "CHECKED": false
         },
         {
-          "SUBID": "fd7298c4-0ecd-4e3c-bf39-f9f5329d7ceb",
+          "SUBID": "6186f68c-e11d-4f16-bfce-78bf3fa233f0",
           "IMGS": "",
           "OPTION": "D.下午体温>=37.3°C",
           "CHECKED": false
@@ -661,40 +668,40 @@
     {
       "TITLE": "中高风险地区返回浙江或途径中高风险地区返回浙江的人员是否进行核酸测试？",
       "INDEX": "Q32",
-      "ITEMID": "ed19d852-3964-43cc-8d06-0dced8bbb8f4",
+      "ITEMID": "ca4bb4bc-f162-4ad4-9403-c3e3fc4d4fde",
       "OPTIONS": [
         {
-          "SUBID": "1b111bbd-95c2-4d26-af5e-b3882455457c",
+          "SUBID": "741b2835-a6b4-409a-b1de-6e35965ee756",
           "IMGS": "",
           "OPTION": "A.阴性",
           "CHECKED": false
         },
         {
-          "SUBID": "1bff8a34-0f32-4300-a346-67c927e7b346",
+          "SUBID": "9afa7313-4531-4e67-bdc3-ba9759795dda",
           "IMGS": "",
           "OPTION": "B.阳性",
           "CHECKED": false
         },
         {
-          "SUBID": "7c963bce-ce8f-42a6-b582-3546da1847e9",
+          "SUBID": "44aa410c-907e-414c-bbb2-4e32d81edeee",
           "IMGS": "",
           "OPTION": "C.未检测",
           "CHECKED": false
         },
         {
-          "SUBID": "3f61d934-ab27-47bc-afd1-fc699e8d2ed1",
+          "SUBID": "ed9277a1-579e-4ae2-a020-f7f6c55e1d5a",
           "IMGS": "",
           "OPTION": "D.已检测，未出结果",
           "CHECKED": false
         },
         {
-          "SUBID": "182d0ff0-173d-4395-92fc-40d7e12fc454",
+          "SUBID": "ce0b3763-fdc6-4f3a-835a-416642b8f2b5",
           "IMGS": "",
           "OPTION": "E.未离开浙江或非中高风险区域返浙人员",
-          "CHECKED": true
+          "CHECKED": false
         },
         {
-          "SUBID": "bfdd4925-c68f-4bef-bb2c-54126fec21f0",
+          "SUBID": "e10ca658-2f60-48bf-9edd-dd9432d48328",
           "IMGS": "",
           "OPTION": "F.未返回浙江",
           "CHECKED": false
