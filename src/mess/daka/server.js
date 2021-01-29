@@ -46,6 +46,7 @@ const emptyAnswerMap = {
   Q31: 0,
   Q32: 4,
 };
+// 是否打过卡
 const renderAnswerData = (detail) => {
   const answerData = [];
   const rows = detail && detail.rows;
@@ -110,6 +111,10 @@ async function run(id) {
 
     console.log(chalk.green('正在获取表单详情...'));
     const detail = await getQuesDetail(questionnaireId, USERID);
+    if(detail.rows && detail.rows[0] && detail.rows[0].HASANSWER === true) {
+      console.log(chalk.magenta('已经打过了'))
+      return
+    }
     console.log('字段个数:', chalk.cyan(detail.rows.length));
     console.log(chalk.green('正在生成提交字段..'));
     const answerData = renderAnswerData(detail);
