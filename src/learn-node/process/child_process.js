@@ -1,0 +1,1 @@
+setTimeout(() => process.send({foo:1}),200)
