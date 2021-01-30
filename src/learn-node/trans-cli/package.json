@@ -1,0 +1,22 @@
+{
+  "name": "translate-cli-zh",
+  "version": "1.0.1",
+  "main": "dist/main",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node-dev src/main.ts"
+  },
+  "bin": {
+    "fy": "dist/cli.js"
+  },
+  "files": ["dist/**/*.js"],
+  "dependencies": {
+    "commander": "^7.0.0",
+    "md5": "^2.3.0",
+    "typescript": "^4.1.3"
+  },
+  "devDependencies": {
+    "@types/md5": "^2.2.1",
+    "@types/node": "^14.14.22"
+  }
+}
