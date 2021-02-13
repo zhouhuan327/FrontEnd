@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>myId <input class="myId" /> friendId <input class="friendId" /> <button class="join">join friend chat</button></div>
+  <br/>
+  <div class="content">
+    <input class="msg" type="text" />
+    <button class="send">发消息</button>
+    <div class="message"></div>
+  </div>
+  
+  <script src="socket.io.js"></script>
+  <script>
+    const socket = io('http://localhost:3000?userId=2');
+    socket.on('connect', function (res) {
+      console.log('connect',res)
+      
+    });
+    socket.on('notice', function(res){
+      console.log('notice',res)
+    })
+    const input = document.querySelector('.msg');
+    const send = document.querySelector('.send')
+    const join = document.querySelector('.join')
+    const messageContainer = document.querySelector('.message')
+    const myId = document.querySelector('.myId')
+    const friendId = document.querySelector('.friendId')
+
+    socket.on('friendChatConnect', res => {
+      messageContainer.innerText += JSON.stringify(res.message) + '\n'
+    })
+    join.onclick = () => {
+      socket.emit('friendChatConnect', {
+        senderId: myId.value,
+        receiverId: friendId.value,
+      });
+    }
+    send.onclick = () => {
+      const data = {
+        senderId: myId.value,
+        receiverId: friendId.value,
+        content: input.value,
+        type: 'text'
+      }
+      socket.emit('friendChatMessage', data)
+    }
+    
+  
+   
+    
+    socket.on('friendChatMessage', function (res) {
+      let data
+      if (res.code === 200) {
+        data = res.data
+      } else if (res.code === 202) {
+        data = res.message
+      }
+      console.log('get message', data)
+      const msg = `${data.sender.username} to ${data.receiver.username} , ${data.content}`
+      messageContainer.innerText += msg + '\n'
+    });
+
+  </script>
+</body>
+
+</html>

@@ -105,7 +105,7 @@ const renderAnswerData = (detail) => {
 };
 async function run(id) {
   if (id > 100) {
-    console.log(chalk.red('输入学号尾号'));
+    console.log(chalk.red('请输入学号后两位'));
     return;
   }
   if (![23, 24, 25, 26, 27, 28].includes(id)) {
@@ -113,7 +113,7 @@ async function run(id) {
     return;
   }
   const USERID = `2019122431020${id}`;
-  console.log(chalk.magenta(' ---RUN---'));
+  console.log(chalk.magenta('Run script..'));
 
   console.log(chalk.green('学号', USERID));
   try {
@@ -132,11 +132,11 @@ async function run(id) {
     console.log(chalk.green('正在生成提交字段..'));
     const answerData = renderAnswerData(detail);
     console.log('提交字段个数:', chalk.cyan(answerData.length));
-    console.log(chalk.green('发请求...'));
+    console.log(chalk.green('提交中...'));
     const answerJSON = JSON.stringify({ answerData });
     const res = await add(questionnaireId, USERID, answerJSON);
     if (res.rspcode == 000000) {
-      console.log(chalk.green('成功'));
+      console.log(chalk.magenta('成功'));
     }
   } catch (e) {
     console.log(chalk.red(e));

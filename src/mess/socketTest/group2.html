@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <input type="text" />
+    <button>发消息</button>
+  </div>
+  <div class="message"></div>
+  <script src="socket.io.js"></script>
+  <script>
+    const input = document.querySelector('input');
+    const btn = document.querySelector('button')
+    const messageContainer = document.querySelector('.message')
+    btn.onclick = () => {
+      const data = {
+        senderId: 2,
+        groupId: 1,
+        content: input.value,
+        type: 'text'
+      }
+      socket.emit('groupChatMessage', data)
+    }
+    const socket = io('http://localhost:3000?userId=2');
+    socket.on('connect', function () {
+
+      socket.emit('events', { test: 'test' }, (r) => {
+        console.log('r',r)
+      });
+    });
+    socket.on('notice', function(res){
+      console.log('notice',res)
+    })
+    setTimeout(() => {
+      console.log('2s 后 emit connect')
+      socket.emit('groupChatConnect', {
+        senderId: 2,
+        groupId: 1,
+      });
+    }, 2000)
+    socket.on('groupChatConnect', res => {
+      if(res.code === 200) {
+        messageContainer.innerText += JSON.stringify(res.message) + '\n'
+      } else {
+        alert(res.message)
+      }
+    })
+    socket.on('groupChatMessage', function (res) {
+      let data
+      if (res.code === 200) {
+        data = res.data
+      } else if (res.code === 202) {
+        data = res.message
+      }
+      console.log('get message', data)
+      messageContainer.innerText += JSON.stringify(data) + '\n'
+    });
+
+  </script>
+</body>
+
+</html>
