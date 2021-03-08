@@ -1,6 +1,6 @@
 const fs = require('fs')
 const http = require('http')
-// const stream = fs.createWriteStream('./big_file.txt')
+// 'const stream = fs.createWriteStream('./big_file.txt')'
 //
 // for(let i = 0;i<100000;i++) {
 //     stream.write(i+'\n')
